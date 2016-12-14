@@ -1,0 +1,16 @@
+<html>
+<body>
+<p id="out"></p>
+<script>
+var a1 = prompt('user request data:');
+var i;
+var fstring = '';
+for (i;i<a1['questionResponses'].length;i++) {
+  temp = a1['questionResponses'][i]['id'];
+  temp = '"' + temp + '"';
+  fstring = temp + ',';
+}
+document.getElementById('out').innerHTML =  fstring;
+</script>
+</body>
+</html>
