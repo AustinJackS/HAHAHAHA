@@ -12,7 +12,8 @@ for (i=0;i<a1['questionResponses'].length;i++) {
   fstring += temp + ',';
 }
 fstring = fstring.slice(0, -1);
-document.getElementById('out').innerHTML +=  fstring;
+var res = 'action=get&security={"consumer_key":"bigidhboQZvnX0J9","domain":"www.bigideasmath.com","timestamp":"20161214-1957","user_id":"61c304e0-7440-4401-873f-112f8dbde5c5","signature":"f52bd5ad4ba7922fba34d4403badd4a26f93c33841f97781f4c9c776acfcd52e"}&usrequest={"questionResponseIds":['+fstring+']}';
+document.getElementById('out').innerHTML +=  res;
 </script>
 </body>
 </html>
