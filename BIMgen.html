@@ -9,7 +9,7 @@ var fstring = '';
 for (i=0;i<a1['questionResponses'].length;i++) {
   temp = a1['questionResponses'][i]['id'];
   temp = '"' + temp + '"';
-  fstring = temp + ',';
+  fstring += temp + ',';
 }
 document.getElementById('out').innerHTML +=  fstring;
 </script>
