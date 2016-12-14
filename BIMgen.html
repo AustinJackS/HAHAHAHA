@@ -11,6 +11,7 @@ for (i=0;i<a1['questionResponses'].length;i++) {
   temp = '"' + temp + '"';
   fstring += temp + ',';
 }
+fstring = fstring.slice(0, -1);
 document.getElementById('out').innerHTML +=  fstring;
 </script>
 </body>
